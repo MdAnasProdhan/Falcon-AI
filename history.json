@@ -35,5 +35,12 @@
     "git add .",
     "git commit -m \"Add planner plugin\"",
     "git push",
+    "exit",
+    "plan learn python",
+    "plan build Falcon AI",
+    "plan amazon delivery",
+    "git add .",
+    "git commit -m \"Upgrade planner with Gemini AI\"",
+    "git push",
     "exit"
 ]
