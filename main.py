@@ -1,3 +1,4 @@
+from core.agent import FalconAgent
 from core.permissions import requires_permission
 from settings import load_settings
 from history import save_command
@@ -13,6 +14,7 @@ print("=" * 40)
 print(f"User : {settings['name']}")
 print(f"Language : {settings['language']}")
 print("=" * 40)
+agent = FalconAgent()
 
 while True:
     user = input("You: ")
@@ -31,6 +33,6 @@ while True:
         print("Falcon AI: Goodbye!")
         break
 
-    reply = think(user)
+    reply = agent.process(user)
     log(f"Falcon AI: {reply}")
     print("Falcon AI:", reply)

@@ -7,6 +7,10 @@ from history import show_history
 def think(user_input):
     text = user_input.lower().strip()
 
+    if text == "agent":
+        from core.agent import FalconAgent
+        return FalconAgent().status()
+
     if text == "history":
         return show_history()
 
