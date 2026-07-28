@@ -1,21 +1,24 @@
 import json
 import os
 
-FILE_NAME = "memory.json"
+FILE = "data/memory.json"
 
-def load_name():
-    if not os.path.exists(FILE_NAME):
-        return None
+def load_memory():
+    if not os.path.exists(FILE):
+        return {}
 
-    with open(FILE_NAME, "r") as file:
-        data = json.load(file)
+    with open(FILE, "r") as f:
+        return json.load(f)
 
-    return data.get("name")
+def save_memory(memory):
+    with open(FILE, "w") as f:
+        json.dump(memory, f, indent=4)
 
-def save_name(name):
-    data = {
-        "name": name
-    }
+def remember(key, value):
+    memory = load_memory()
+    memory[key] = value
+    save_memory(memory)
 
-    with open(FILE_NAME, "w") as file:
-        json.dump(data, file)
+def recall(key):
+    memory = load_memory()
+    return memory.get(key)

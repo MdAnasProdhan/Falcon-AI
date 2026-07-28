@@ -10,5 +10,17 @@
     "hello",
     "complete delivery",
     "calculate 10+20",
+    "exit",
+    "remember city=Jubail",
+    "recall city",
+    "data/memory.json",
+    "nano data/memory.json",
+    "{}",
+    "{",
+    "    \"city\": \"Jeddah\"",
+    "}remember city=Jeddah",
+    "remember job=Amazon Driver",
+    "remember ai=Falconrecall city",
+    "recall job",
     "exit"
 ]
