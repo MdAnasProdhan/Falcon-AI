@@ -22,5 +22,18 @@
     "remember job=Amazon Driver",
     "remember ai=Falconrecall city",
     "recall job",
+    "exit",
+    "plan my day",
+    "plan falcon",
+    "exit",
+    "plan my day",
+    "plan falcon",
+    "plan amazon",
+    "nano planner.py",
+    "exit",
+    "plan amazon",
+    "git add .",
+    "git commit -m \"Add planner plugin\"",
+    "git push",
     "exit"
 ]

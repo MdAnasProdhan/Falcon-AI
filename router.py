@@ -1,3 +1,4 @@
+from modules.planner import PlannerPlugin
 from modules.greetings import GreetingsPlugin
 from modules.calculator import CalculatorPlugin
 from modules.time_tool import TimePlugin
@@ -6,6 +7,7 @@ plugins = [
     GreetingsPlugin(),
     CalculatorPlugin(),
     TimePlugin(),
+    PlannerPlugin(),
 ]
 
 def route(text):
